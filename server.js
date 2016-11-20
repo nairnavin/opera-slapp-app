@@ -91,9 +91,9 @@ slapp.message(/^(thanks|thank you)/i, ['mention', 'direct_message'], (msg) => {
   ])
 })
 
-slapp.message('chess', ['direct_message'], (msg)) => {
+slapp.message('chess', ['direct_message'], (msg) => {
   msg.say(["Excellent choice"])
-}
+})
 
 // demonstrate returning an attachment...
 slapp.message('attachment', ['mention', 'direct_message'], (msg) => {
