@@ -95,13 +95,50 @@ slapp.message(/^(thanks|thank you)/i, ['mention', 'direct_message'], (msg) => {
 slapp.message('attachment', ['mention', 'direct_message'], (msg) => {
   msg.say({
     text: 'Check out this amazing attachment! :confetti_ball: ',
-    attachments: [{
+    /*
+    atachments: [{
       text: 'Slapp is a robust open source library that sits on top of the Slack APIs',
       title: 'Slapp Library - Open Source',
       image_url: 'https://storage.googleapis.com/beepboophq/_assets/bot-1.22f6fb.png',
       title_link: 'https://beepboophq.com/',
       color: '#7CD197'
     }]
+    */
+    attachments: [{
+            text: "Choose a game to play",
+            fallback: "You are unable to choose a game",
+            callback_id: "wopr_game",
+            color: "#3AA3E3",
+            attachment_type: "default",
+            actions: [
+                {
+                    "name": "chess",
+                    "text": "Chess",
+                    "type": "button",
+                    "value": "chess"
+                },
+                {
+                    "name": "maze",
+                    "text": "Falken's Maze",
+                    "type": "button",
+                    "value": "maze"
+                },
+                {
+                    "name": "war",
+                    "text": "Thermonuclear War",
+                    "style": "danger",
+                    "type": "button",
+                    "value": "war",
+                    "confirm": {
+                        "title": "Are you sure?",
+                        "text": "Wouldn't you prefer a good game of chess?",
+                        "ok_text": "Yes",
+                        "dismiss_text": "No"
+                    }
+                }
+            ]
+        }
+    ]      
   })
 })
 
