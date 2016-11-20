@@ -90,10 +90,11 @@ slapp.message(/^(thanks|thank you)/i, ['mention', 'direct_message'], (msg) => {
     'Anytime :sun_with_face: :full_moon_with_face:'
   ])
 })
-
+/*
 slapp.message('chess', ['direct_message'], (msg) => {
   msg.say(["Excellent choice"])
 })
+*/
 
 // demonstrate returning an attachment...
 slapp.message('attachment', ['mention', 'direct_message'], (msg) => {
@@ -150,9 +151,12 @@ slapp.message('attachment', ['mention', 'direct_message'], (msg) => {
 // Catch-all for any other responses not handled above
 slapp.message('.*', ['direct_mention', 'direct_message'], (msg) => {
   // respond only 40% of the time
+  msg.say(slapp.message)
+  /*
   if (Math.random() < 0.4) {
     msg.say([':wave:', ':pray:', ':raised_hands:'])
   }
+  */
 })
 
 // attach Slapp to express server
