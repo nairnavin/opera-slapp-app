@@ -91,6 +91,10 @@ slapp.message(/^(thanks|thank you)/i, ['mention', 'direct_message'], (msg) => {
   ])
 })
 
+slapp.message('chess', ['direct_message'], (msg)) => {
+  msg.say(["Excellent choice"])
+}
+
 // demonstrate returning an attachment...
 slapp.message('attachment', ['mention', 'direct_message'], (msg) => {
   msg.say({
@@ -108,6 +112,7 @@ slapp.message('attachment', ['mention', 'direct_message'], (msg) => {
             text: "Choose a game to play",
             fallback: "You are unable to choose a game",
             callback_id: "wopr_game",
+            image_url: 'https://storage.googleapis.com/beepboophq/_assets/bot-1.22f6fb.png',
             color: "#3AA3E3",
             attachment_type: "default",
             actions: [
