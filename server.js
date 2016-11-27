@@ -1,5 +1,7 @@
 'use strict'
 
+require('./decisiontree.js');
+
 const express = require('express')
 const Slapp = require('slapp')
 const ConvoStore = require('slapp-convo-beepboop')
@@ -26,6 +28,9 @@ I will respond to the following messages:
 \`attachment\` - to see a Slack attachment message.
 `
 
+
+
+
 //*********************************************
 // Setup different handlers for messages
 //*********************************************
@@ -49,7 +54,7 @@ slapp.action('wopr_game', 'option', (msg, value) => {
 // "Conversation" flow that tracks state - kicks off when user says hi, hello or hey
 slapp
   .message('^(hi|hello|hey)$', ['direct_mention', 'direct_message'], (msg, text) => {
-    console.log("This is a test")
+    console.log(getFirstMessage())
     msg
       .say(`${text}, how are you?`)
       // sends next event from user to this route, passing along state

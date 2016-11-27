@@ -1,8 +1,7 @@
 //export botflow = 
 var botflow = require('./botflow.json');
 
-module.export = decisiontree;
 
-function decisiontree() {
-	return botflow;
+function getFirstMessage() {
+	return botflow.messages[0];
 }
