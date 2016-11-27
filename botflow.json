@@ -44,7 +44,6 @@
 			"text": "Please provide which area would you like to review?",
 			"attachments": [
 				{
-					//"text": "Please chose one of the following options",
 					"fallback": "You are unable to choose an option",
 					"callback_id": "Daily-Review",
 					"color": "#3AA3E3",
