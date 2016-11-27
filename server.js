@@ -1,11 +1,26 @@
 'use strict'
 
-require('./decisiontree.js');
-
+require('./decisiontree.js')
 const express = require('express')
 const Slapp = require('slapp')
 const ConvoStore = require('slapp-convo-beepboop')
 const Context = require('slapp-context-beepboop')
+
+var botflow = require('./botflow.json');
+
+
+function getFirstMessage() {
+	return getAttachmentMessage('GREETINGS');
+}
+
+function getAttachmentMessage(msgName) {
+	for(i = 0; i < botflow.messages.length; i++) {
+		if (msgName == botflow.messages[i].message_name ) {
+			return botflow.messages[i];
+		}
+	}
+}
+
 
 // use `PORT` env var on Beep Boop - default to 3000 locally
 var port = process.env.PORT || 3000
