@@ -13,7 +13,7 @@ function getFirstMessage() {
 }
 
 function getAttachmentMessage(msgName) {
-	for(i = 0; i < botflow.messages.length; i++) {
+	for(var i = 0; i < botflow.messages.length; i++) {
 		if (msgName == botflow.messages[i].message_name ) {
 			return botflow.messages[i];
 		}
