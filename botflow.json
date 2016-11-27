@@ -82,7 +82,6 @@
 			"text": "Please provide which area would you like to review?",
 			"attachments": [
 				{
-					//"text": "Please the what data you wish to review",
 					"fallback": "You are unable to choose an option",
 					"callback_id": "FACILITY",
 					"color": "#3AA3E3",
