@@ -41,7 +41,8 @@ slapp.message('help', ['mention', 'direct_message'], (msg) => {
 })
 
 slapp.action('wopr_game', 'option', (msg, value) => {
-  msg.say('${value} is a great choice!')
+  console.log(value)
+  msg.say(value)
   //msg.respond(msg.body.response_url, `${value} is a good choice!`)
 })
 
