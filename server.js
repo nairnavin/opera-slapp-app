@@ -32,7 +32,7 @@ I will respond to the following messages:
 
 // response to the user typing "help"
 
-slapp.event('im_open', (msg) => {
+slapp.event('hello', (msg) => {
   console.log("Connection opened, Hi there")
 })
 
@@ -41,7 +41,8 @@ slapp.message('help', ['mention', 'direct_message'], (msg) => {
 })
 
 slapp.action('chess', 'chess', (msg, value) => {
-  msg.respond(msg.body.response_url, `${value} is a good choice!`)
+  console.log("Chess")
+  msg.say('chess is a good choice!')
 })
 
 // "Conversation" flow that tracks state - kicks off when user says hi, hello or hey
