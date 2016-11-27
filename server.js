@@ -31,8 +31,17 @@ I will respond to the following messages:
 //*********************************************
 
 // response to the user typing "help"
+
+slapp.event('im_open', (msg) => {
+  console.log("Connection opened, Hi there")
+})
+
 slapp.message('help', ['mention', 'direct_message'], (msg) => {
   msg.say(HELP_TEXT)
+})
+
+slapp.message('chess', ['mention', 'direct_message'], (msg) => {
+  msg.say("You have typed chess!!!")
 })
 
 // "Conversation" flow that tracks state - kicks off when user says hi, hello or hey
