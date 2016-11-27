@@ -40,9 +40,11 @@ slapp.message('help', ['mention', 'direct_message'], (msg) => {
   msg.say(HELP_TEXT)
 })
 
-slapp.action('chess', 'chess', (msg, value) => {
+slapp.action('wopr_game', 'option', (msg, value) => {
   console.log("Chess")
+  console.log('${value}')
   msg.say('chess is a good choice!')
+  msg.respond(msg.body.response_url, `${value} is a good choice!`)
 })
 
 // "Conversation" flow that tracks state - kicks off when user says hi, hello or hey
@@ -130,19 +132,19 @@ slapp.message('attachment', ['mention', 'direct_message'], (msg) => {
             attachment_type: "default",
             actions: [
                 {
-                    "name": "chess",
+                    "name": "option",
                     "text": "Chess",
                     "type": "button",
                     "value": "chess"
                 },
                 {
-                    "name": "maze",
+                    "name": "option",
                     "text": "Falken's Maze",
                     "type": "button",
                     "value": "maze"
                 },
                 {
-                    "name": "war",
+                    "name": "option",
                     "text": "Thermonuclear War",
                     "style": "danger",
                     "type": "button",
