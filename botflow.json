@@ -1,85 +1,85 @@
 	{
 	"messages": [
 		{
-			"message_name" : "GREETINGS",
+			"message_name" : "Greetings",
 			"text": "Hi, I am Opera, your digital production assistant. How can I help you today?",
 			"attachments": [
 				{
 					"text": "Please chose one of the following options",
 					"fallback": "You are unable to choose an option",
-					"callback_id": "GREETINGS",
+					"callback_id": "Greetings",
 					"color": "#3AA3E3",
 					"attachment_type": "default",
 					"actions": [
 						{
-							"name": "review",
+							"name": "action",
 							"text": "Yesterday's DPR Review'",
 							"type": "button",
-							"value": "DAILY_REVIEW"
+							"value": "Daily-Review"
 						},
 						{
-							"name": "facility-scorpio",
+							"name": "action",
 							"text": "Review facility Scorpio",
 							"type": "button",
-							"value": "FACILITY-SCORPIO"
+							"value": "Faciliy-Scorpio"
 						},
 						{
-							"name": "facility-scorpio",
-							"text": "Review facility Scorpio",
+							"name": "action",
+							"text": "Review facility Leo",
 							"type": "button",
-							"value": "FACILITY-SCORPIO"
+							"value": "Faciliy-Leo"
 						},
 						{
-							"name": "facility-scorpio",
-							"text": "Review facility Scorpio",
+							"name": "action",
+							"text": "Review facility Pisces",
 							"type": "button",
-							"value": "FACILITY-SCORPIO"
+							"value": "Faciliy-Pisces"
 						}
 					]
 				}
 			]
 		},
 		{
-			"message_name" : "DAILY_REVIEW",
+			"message_name" : "Daily-Review",
 			"text": "Please provide which area would you like to review?",
 			"attachments": [
 				{
 					"text": "Please chose one of the following options",
 					"fallback": "You are unable to choose an option",
-					"callback_id": "DAILY_REVIEW",
+					"callback_id": "Daily-Review",
 					"color": "#3AA3E3",
 					"attachment_type": "default",
 					"actions": [
 						{
-							"name": "operations",
+							"name": "action",
 							"text": "Operations",
 							"type": "button",
-							"value": "OPERATIONS"
+							"value": "Operations"
 						},
 						{
-							"name": "maintenance",
+							"name": "action",
 							"text": "Maintenance",
 							"type": "button",
-							"value": "MAINTENANCE"
+							"value": "Maintenance"
 						},
 						{
-							"name": "instrumentation",
+							"name": "action",
 							"text": "Instrumentation",
 							"type": "button",
-							"value": "INSTRUMENTATION"
+							"value": "Instrumentation"
 						},
 																		{
-							"name": "safety",
+							"name": "action",
 							"text": "Safety",
 							"type": "button",
-							"value": "SAFETY"
+							"value": "Safety"
 						}
 					]
 				}
 			]
 		},
 		{
-			"message_name" : "FACILITY",
+			"message_name" : "Faciliy-Review",
 			"text": "Please provide which area would you like to review?",
 			"attachments": [
 				{

@@ -59,21 +59,28 @@ slapp.message('help', ['mention', 'direct_message'], (msg) => {
   msg.say(HELP_TEXT)
 })
 
-slapp.action('wopr_game', 'option', (msg, value) => {
+// "Conversation" flow that tracks state - kicks off when user says hi, hello or hey
+slapp
+  .message('^(hi|hello|hey)$', ['direct_mention', 'direct_message'], (msg, text) => {
+    msg
+      .say(getFirstMessage())
+      // sends next event from user to this route, passing along state
+      //.route('how-are-you', { greeting: text })
+})
+
+slapp.action('Greetings', 'action', (msg, value) => {
+  console.log(value)
+  msg.say(getAttachmentMessage(value))
+  //msg.respond(msg.body.response_url, `${value} is a good choice!`)
+})
+
+slapp.action('Daily-Review', 'option', (msg, value) => {
   console.log(value)
   msg.say(value)
   //msg.respond(msg.body.response_url, `${value} is a good choice!`)
 })
 
-// "Conversation" flow that tracks state - kicks off when user says hi, hello or hey
-slapp
-  .message('^(hi|hello|hey)$', ['direct_mention', 'direct_message'], (msg, text) => {
-    console.log(getFirstMessage())
-    msg
-      .say(getFirstMessage())
-      // sends next event from user to this route, passing along state
-      //.route('how-are-you', { greeting: text })
-  })
+  /*
   .route('how-are-you', (msg, state) => {
     var text = (msg.body.event && msg.body.event.text) || ''
 
@@ -84,7 +91,7 @@ slapp
         .say('How are you?')
         .route('how-are-you', state)
     }
-
+    */
     // add their response to state
     state.status = text
 
