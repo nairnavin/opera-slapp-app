@@ -40,8 +40,8 @@ slapp.message('help', ['mention', 'direct_message'], (msg) => {
   msg.say(HELP_TEXT)
 })
 
-slapp.message('chess', ['mention', 'direct_message'], (msg) => {
-  msg.say("You have typed chess!!!")
+slapp.action('chess', 'chess', (msg, value) => {
+  msg.respond(msg.body.response_url, `${value} is a good choice!`)
 })
 
 // "Conversation" flow that tracks state - kicks off when user says hi, hello or hey
