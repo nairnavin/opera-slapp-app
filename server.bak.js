@@ -16,7 +16,6 @@ var slapp = Slapp({
 })
 
 
-
 var HELP_TEXT = `
 I will respond to the following messages:
 \`help\` - to see this message.
