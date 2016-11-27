@@ -91,7 +91,7 @@ slapp.action('Daily-Review', 'option', (msg, value) => {
         .say('How are you?')
         .route('how-are-you', state)
     }
-    */
+
     // add their response to state
     state.status = text
 
@@ -117,7 +117,7 @@ slapp.action('Daily-Review', 'option', (msg, value) => {
       .say(`Here's what you've told me so far: \`\`\`${JSON.stringify(state)}\`\`\``)
     // At this point, since we don't route anywhere, the "conversation" is over
   })
-
+    */
 // Can use a regex as well
 slapp.message(/^(thanks|thank you)/i, ['mention', 'direct_message'], (msg) => {
   // You can provide a list of responses, and a random one will be chosen
@@ -135,57 +135,6 @@ slapp.message('chess', ['direct_message'], (msg) => {
 })
 */
 
-// demonstrate returning an attachment...
-slapp.message('attachment', ['mention', 'direct_message'], (msg) => {
-  msg.say({
-    text: 'Check out this amazing attachment! :confetti_ball: ',
-    /*
-    atachments: [{
-      text: 'Slapp is a robust open source library that sits on top of the Slack APIs',
-      title: 'Slapp Library - Open Source',
-      image_url: 'https://storage.googleapis.com/beepboophq/_assets/bot-1.22f6fb.png',
-      title_link: 'https://beepboophq.com/',
-      color: '#7CD197'
-    }]
-    */
-    attachments: [{
-            text: "Choose a game to play",
-            fallback: "You are unable to choose a game",
-            callback_id: "wopr_game",
-            image_url: 'https://storage.googleapis.com/beepboophq/_assets/bot-1.22f6fb.png',
-            color: "#3AA3E3",
-            attachment_type: "default",
-            actions: [
-                {
-                    "name": "option",
-                    "text": "Chess",
-                    "type": "button",
-                    "value": "chess"
-                },
-                {
-                    "name": "option",
-                    "text": "Falken's Maze",
-                    "type": "button",
-                    "value": "maze"
-                },
-                {
-                    "name": "option",
-                    "text": "Thermonuclear War",
-                    "style": "danger",
-                    "type": "button",
-                    "value": "war",
-                    "confirm": {
-                        "title": "Are you sure?",
-                        "text": "Wouldn't you prefer a good game of chess?",
-                        "ok_text": "Yes",
-                        "dismiss_text": "No"
-                    }
-                }
-            ]
-        }
-    ]      
-  })
-})
 
 // Catch-all for any other responses not handled above
 slapp.message('.*', ['direct_mention', 'direct_message'], (msg) => {
