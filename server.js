@@ -9,7 +9,7 @@ var botflow = require('./botflow.json');
 
 
 function getFirstMessage() {
-	return getAttachmentMessage('GREETINGS');
+	return getAttachmentMessage('Greetings');
 }
 
 function getAttachmentMessage(msgName) {
