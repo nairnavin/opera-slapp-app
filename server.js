@@ -68,16 +68,24 @@ slapp
       //.route('how-are-you', { greeting: text })
 })
 
-slapp.action('Greetings', 'action', (msg, value) => {
-  console.log(value)
+slapp.action('Daily-Review', 'action', (msg, value) => {
+  //console.log(value)
   msg.say(getAttachmentMessage(value))
-  //msg.respond(msg.body.response_url, `${value} is a good choice!`)
 })
 
-slapp.action('Daily-Review', 'option', (msg, value) => {
-  console.log(value)
-  msg.say(value)
-  //msg.respond(msg.body.response_url, `${value} is a good choice!`)
+slapp.action('Operations', 'action', (msg, value) => {
+  //console.log(value)
+  msg.say(getAttachmentMessage(value))
+})
+
+slapp.action('Review-Well', 'action', (msg, value) => {
+  //console.log(value)
+  msg.say(getAttachmentMessage(value))
+})
+
+slapp.action('Well-Op-Para', 'action', (msg, value) => {
+  //console.log(value)
+  msg.say(getAttachmentMessage(value))
 })
 
   /*

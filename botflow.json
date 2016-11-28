@@ -8,6 +8,7 @@
 					"text": "Please chose one of the following options",
 					"fallback": "You are unable to choose an option",
 					"callback_id": "Greetings",
+					"image_url": "https://storage.googleapis.com/beepboophq/_assets/bot-1.22f6fb.png",
 					"color": "#3AA3E3",
 					"attachment_type": "default",
 					"actions": [
@@ -67,7 +68,7 @@
 							"type": "button",
 							"value": "Instrumentation"
 						},
-																		{
+						{
 							"name": "action",
 							"text": "Safety",
 							"type": "button",
@@ -78,49 +79,100 @@
 			]
 		},
 		{
-			"message_name" : "Faciliy-Review",
-			"text": "Please provide which area would you like to review?",
+			"message_name" : "Operations",
+			"text": "Following are the high priority events set by the operations team for your review",
 			"attachments": [
 				{
 					"fallback": "You are unable to choose an option",
-					"callback_id": "FACILITY",
+					"callback_id": "Operations",
 					"color": "#3AA3E3",
 					"attachment_type": "default",
 					"actions": [
 						{
-							"name": "PROD_HISTORY",
-							"text": "Production History",
+							"name": "action",
+							"text": "Well-WS123 tripped at 1430 Hours",
 							"type": "button",
-							"value": "PROD_HISTORY"
+							"value": "Review-Well"
 						},
 						{
-							"name": "WELL_OP_PARA",
-							"text": "Well Operation Parameters",
+							"name": "action",
+							"text": "Compressor K-001 Liquid carryover detected",
 							"type": "button",
-							"value": "WELL_OP_PARA"
-						},
-						{
-							"name": "WELL_SUMMARY",
-							"text": "Well Summary and Completion",
-							"type": "button",
-							"value": "WELL_SUMMARY"
-						},
-						{
-							"name": "WELL_TEST",
-							"text": "Well Test History",
-							"type": "button",
-							"value": "WELL_TEST"
-						},
-						{
-							"name": "PUMP",
-							"text": "Pump Details",
-							"type": "button",
-							"value": "PUMP"
+							"value": "Compressor-K001"
 						}
 					]
 				}
 			]
-		}		
+		},		
+		{
+			"message_name" : "Review-Well",
+			"text": "Please provide what you like to review in Well-WS123?",
+			"attachments": [
+				{
+					"fallback": "You are unable to choose an option",
+					"callback_id": "Review-Well",
+					"color": "#3AA3E3",
+					"attachment_type": "default",
+					"actions": [
+						{
+							"name": "action",
+							"text": "Production History",
+							"type": "button",
+							"value": "Prod-History"
+						},
+						{
+							"name": "action",
+							"text": "Well Operation Parameters",
+							"type": "button",
+							"value": "Well-Op-Para"
+						},
+						{
+							"name": "action",
+							"text": "Well Summary and Completion",
+							"type": "button",
+							"value": "Well-Summary"
+						},
+						{
+							"name": "action",
+							"text": "Well Test History",
+							"type": "button",
+							"value": "Well-Test"
+						},
+						{
+							"name": "action",
+							"text": "Pump Details",
+							"type": "button",
+							"value": "Pump-Details"
+						},
+						{
+							"name": "action",
+							"text": "Pump Vendor Details",
+							"type": "button",
+							"value": "Pump-Vendor-Details"
+						},
+						{
+							"name": "action",
+							"text": "Show me everything",
+							"type": "button",
+							"value": "Show-Me-Everything"
+						}						
+					]
+				}
+			]
+		},
+		{
+			"message_name" : "Well-Op-Para",
+			"text": "Please find the Well Operation Parameters display",
+			"attachments": [
+				{
+					"fallback": "You are unable to choose an option",
+					"callback_id": "Well-Op-Para",
+					"color": "#3AA3E3",
+					"attachment_type": "default",
+					"image_url": "https://storage.googleapis.com/beepboophq/_assets/bot-1.22f6fb.png"
+				}
+			]
+		}						
 				
 	]
 }
