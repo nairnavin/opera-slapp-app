@@ -8,7 +8,7 @@
 					"text": "Please chose one of the following options",
 					"fallback": "You are unable to choose an option",
 					"callback_id": "Greetings",
-					"image_url": "https://storage.googleapis.com/beepboophq/_assets/bot-1.22f6fb.png",
+					"image_url": "http://previewcf.turbosquid.com/Preview/2014/07/12__09_19_10/render1.png1daf3d03-7ce0-4d8f-95a0-39d2c1d57a93Res200.jpg",
 					"color": "#3AA3E3",
 					"attachment_type": "default",
 					"actions": [
