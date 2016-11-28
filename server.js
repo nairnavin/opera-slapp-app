@@ -68,6 +68,11 @@ slapp
       //.route('how-are-you', { greeting: text })
 })
 
+slapp.action('Greetings', 'action', (msg, value) => {
+  //console.log(value)
+  msg.say(getAttachmentMessage(value))
+})
+
 slapp.action('Daily-Review', 'action', (msg, value) => {
   //console.log(value)
   msg.say(getAttachmentMessage(value))
@@ -79,11 +84,6 @@ slapp.action('Operations', 'action', (msg, value) => {
 })
 
 slapp.action('Review-Well', 'action', (msg, value) => {
-  //console.log(value)
-  msg.say(getAttachmentMessage(value))
-})
-
-slapp.action('Well-Op-Para', 'action', (msg, value) => {
   //console.log(value)
   msg.say(getAttachmentMessage(value))
 })
