@@ -3,7 +3,7 @@
 		{
 
 			"message_name" : "Greetings",
-			"text": "Greetings!!! I am Opera, your digital production assistant. How can I help you today?",
+			"text": "Hello!!! I am Opera, your digital production assistant. How can I help you today?",
 			"attachments": [
 				{
 					"text": "Please chose one of the following options",
