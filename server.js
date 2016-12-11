@@ -184,8 +184,6 @@ slapp.action('WS072-Optimization', 'action', (msg, value) => {
 })
 
 
-//This is a test
-
   /*
   .route('how-are-you', (msg, state) => {
     var text = (msg.body.event && msg.body.event.text) || ''
