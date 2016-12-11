@@ -228,7 +228,7 @@
 							"name": "action",
 							"text": "Back to Task Review",
 							"type": "button",
-							"value": "Review-Well"
+							"value": "Review-Comp"
 						},
 						{
 							"name": "action",
@@ -256,7 +256,7 @@
 							"name": "action",
 							"text": "Back to Task Review",
 							"type": "button",
-							"value": "Review-Well"
+							"value": "Review-Comp"
 						},
 						{
 							"name": "action",
@@ -265,6 +265,38 @@
 							"value": "Daily-Review"
 						}
 					
+					]
+				}
+			]
+		},
+		{
+			"message_name" : "Review-Comp",
+			"text": "Please provide what you would like to review for the well?",
+			"attachments": [
+				{
+					"fallback": "You are unable to choose an option",
+					"callback_id": "Review-Comp",
+					"color": "#3AA3E3",
+					"attachment_type": "default",
+					"actions": [
+						{
+							"name": "action",
+							"text": "Compressor Performance History",
+							"type": "button",
+							"value": "Comp-History"
+						},
+						{
+							"name": "action",
+							"text": "Compressor Maintenance History",
+							"type": "button",
+							"value": "Comp-Maint-History"
+						},
+						{
+							"name": "action",
+							"text": "Assign Task to Technician",
+							"type": "button",
+							"value": "AssignTechnician"
+						}						
 					]
 				}
 			]

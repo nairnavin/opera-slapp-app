@@ -106,6 +106,10 @@ slapp.action('Review-Well', 'action', (msg, value) => {
   //console.log(value)
   msg.say(getAttachmentMessage(value))
 })
+slapp.action('Review-Comp', 'action', (msg, value) => {
+  //console.log(value)
+  msg.say(getAttachmentMessage(value))
+})
 slapp.action('Compressor-K001-Liquid', 'action', (msg, value) => {
   //console.log(value)
   msg.say(getAttachmentMessage(value))
