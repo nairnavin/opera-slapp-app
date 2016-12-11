@@ -162,6 +162,10 @@ slapp.action('VendorAvailability', 'action', (msg, value) => {
   //console.log(value)
   msg.say(getAttachmentMessage(value))
 })
+slapp.action('Well-WS055-Leak', 'action', (msg, value) => {
+  //console.log(value)
+  msg.say(getAttachmentMessage(value))
+})
  
 //This is a test
 

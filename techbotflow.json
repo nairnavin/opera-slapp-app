@@ -42,7 +42,7 @@
 			"attachments": [
 				{
 					"fallback": "You are unable to choose an option",
-					"callback_id": "Well WS055-Leak",
+					"callback_id": "Well-WS055-Leak",
 					"color": "#3AA3E3",
 					"attachment_type": "default",
 					"actions": [
