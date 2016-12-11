@@ -94,6 +94,18 @@ slapp.action('Review-Well', 'action', (msg, value) => {
   //console.log(value)
   msg.say(getAttachmentMessage(value))
 })
+slapp.action('Compressor-K001-Liquid', 'action', (msg, value) => {
+  //console.log(value)
+  msg.say(getAttachmentMessage(value))
+})
+slapp.action('Comp-History', 'action', (msg, value) => {
+  //console.log(value)
+  msg.say(getAttachmentMessage(value))
+})
+slapp.action('Comp-Maint-History', 'action', (msg, value) => {
+  //console.log(value)
+  msg.say(getAttachmentMessage(value))
+})
 slapp.action('WS-102-Routine-Insp', 'action', (msg, value) => {
   //console.log(value)
   msg.say(getAttachmentMessage(value))
