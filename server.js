@@ -89,6 +89,18 @@ slapp.action('Operations', 'action', (msg, value) => {
   //console.log(value)
   msg.say(getAttachmentMessage(value))
 })
+slapp.action('Maintenance', 'action', (msg, value) => {
+  //console.log(value)
+  msg.say(getAttachmentMessage(value))
+})
+slapp.action('Instrumentation', 'action', (msg, value) => {
+  //console.log(value)
+  msg.say(getAttachmentMessage(value))
+})
+slapp.action('Safety', 'action', (msg, value) => {
+  //console.log(value)
+  msg.say(getAttachmentMessage(value))
+})
 
 slapp.action('Review-Well', 'action', (msg, value) => {
   //console.log(value)
@@ -103,6 +115,14 @@ slapp.action('Comp-History', 'action', (msg, value) => {
   msg.say(getAttachmentMessage(value))
 })
 slapp.action('Comp-Maint-History', 'action', (msg, value) => {
+  //console.log(value)
+  msg.say(getAttachmentMessage(value))
+})
+slapp.action('Prod-History', 'action', (msg, value) => {
+  //console.log(value)
+  msg.say(getAttachmentMessage(value))
+})
+slapp.action('Well-Op-Para', 'action', (msg, value) => {
   //console.log(value)
   msg.say(getAttachmentMessage(value))
 })
