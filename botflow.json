@@ -24,19 +24,7 @@
 							"text": "Review facility Scorpio",
 							"type": "button",
 							"value": "Faciliy-Scorpio" 
-						}/*,
-						{
-							"name": "action",
-							"text": "Review facility Leo",
-							"type": "button",
-							"value": "Faciliy-Leo"
-						},
-						{
-							"name": "action",
-							"text": "Review facility Pisces",
-							"type": "button",
-							"value": "Faciliy-Pisces"
-						}*/
+						}
 					]
 				}
 			]
