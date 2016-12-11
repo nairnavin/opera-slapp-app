@@ -81,97 +81,30 @@
 			]
 		},
 		{
-			"message_name" : "Operations",
-			"text": "Following are the high priority events set by the operations team for your review",
+			"message_name" : "Inventory",
+			"text": "Hang on! I will pull up the information",
 			"attachments": [
 				{
 					"fallback": "You are unable to choose an option",
-					"callback_id": "Operations",
+					"callback_id": "Inventory",
 					"color": "#3AA3E3",
-					"attachment_type": "default",
+					"attachment_type": "Inventory",
+					"text": "40 nos Corrugate Metal and 37 Nos flange insulation gasket is available in your store.",
 					"actions": [
 						{
 							"name": "action",
-							"text": "Well-WS123 tripped at 1430 Hours",
+							"text": "Continue Reviewing",
 							"type": "button",
-							"value": "Review-Well"
+							"value": "VendorAvailability"
 						},
 						{
 							"name": "action",
-							"text": "Compressor K-001 Liquid carryover detected",
+							"text": "Back to task review",
 							"type": "button",
-							"value": "Compressor-K001"
+							"value": "Greetings"
 						}
+					
 					]
-				}
-			]
-		},		
-		{
-			"message_name" : "Review-Well",
-			"text": "Please provide what you like to review in Well-WS123?",
-			"attachments": [
-				{
-					"fallback": "You are unable to choose an option",
-					"callback_id": "Review-Well",
-					"color": "#3AA3E3",
-					"attachment_type": "default",
-					"actions": [
-						{
-							"name": "action",
-							"text": "Production History",
-							"type": "button",
-							"value": "Prod-History"
-						},
-						{
-							"name": "action",
-							"text": "Well Operation Parameters",
-							"type": "button",
-							"value": "Well-Op-Para"
-						},
-						{
-							"name": "action",
-							"text": "Well Summary and Completion",
-							"type": "button",
-							"value": "Well-Summary"
-						},
-						{
-							"name": "action",
-							"text": "Well Test History",
-							"type": "button",
-							"value": "Well-Test"
-						},
-						{
-							"name": "action",
-							"text": "Pump Details",
-							"type": "button",
-							"value": "Pump-Details"
-						},
-						{
-							"name": "action",
-							"text": "Pump Vendor Details",
-							"type": "button",
-							"value": "Pump-Vendor-Details"
-						},
-						{
-							"name": "action",
-							"text": "Show me everything",
-							"type": "button",
-							"value": "Show-Me-Everything"
-						}						
-					]
-				}
-			]
-		},
-		{
-			"message_name" : "Well-Op-Para",
-			"text": "Please find the Well Operation Parameters display",
-			"attachments": [
-				{
-					"fallback": "You are unable to choose an option",
-					"callback_id": "Well-Op-Para",
-					"color": "#3AA3E3",
-					"attachment_type": "default",
-					"image_url": "http://www.ieltsbuddy.com/images/ielts-task-1-writing-bar-chart-oil-production-capacity-21636483.jpg"
 				}
 			]
 		}						
