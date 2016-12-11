@@ -85,7 +85,7 @@ slapp.action('Daily-Review', 'action', (msg, value) => {
   msg.say(getAttachmentMessage(value))
 })
 
-slapp.action('Operations', 'action', (msg, value) => {
+slapp.action('Operations|Maintenance|Instrumentation|Safety', 'action', (msg, value) => {
   //console.log(value)
   msg.say(getAttachmentMessage(value))
 })
