@@ -24,7 +24,7 @@
 							"text": "Review facility Scorpio",
 							"type": "button",
 							"value": "Faciliy-Scorpio"
-						},
+						}/*,
 						{
 							"name": "action",
 							"text": "Review facility Leo",
@@ -36,7 +36,7 @@
 							"text": "Review facility Pisces",
 							"type": "button",
 							"value": "Faciliy-Pisces"
-						}
+						}*/
 					]
 				}
 			]
@@ -99,7 +99,7 @@
 							"name": "action",
 							"text": "Compressor K-001 Liquid carryover detected",
 							"type": "button",
-							"value": "Compressor-K001"
+							"value": "Compressor-K001-Liquid"
 						}
 					]
 				}
@@ -129,33 +129,9 @@
 						},
 						{
 							"name": "action",
-							"text": "Well Summary and Completion",
+							"text": "Assign Task to Technician",
 							"type": "button",
-							"value": "Well-Summary"
-						},
-						{
-							"name": "action",
-							"text": "Well Test History",
-							"type": "button",
-							"value": "Well-Test"
-						},
-						{
-							"name": "action",
-							"text": "Pump Details",
-							"type": "button",
-							"value": "Pump-Details"
-						},
-						{
-							"name": "action",
-							"text": "Pump Vendor Details",
-							"type": "button",
-							"value": "Pump-Vendor-Details"
-						},
-						{
-							"name": "action",
-							"text": "Show me everything",
-							"type": "button",
-							"value": "Show-Me-Everything"
+							"value": "AssignTechnician"
 						}						
 					]
 				}
@@ -170,10 +146,333 @@
 					"callback_id": "Well-Op-Para",
 					"color": "#3AA3E3",
 					"attachment_type": "default",
-					"image_url": "http://www.ieltsbuddy.com/images/ielts-task-1-writing-bar-chart-oil-production-capacity-21636483.jpg"
+					"image_url": "http://www.ieltsbuddy.com/images/ielts-task-1-writing-bar-chart-oil-production-capacity-21636483.jpg",
+					"actions": [
+						{
+							"name": "action",
+							"text": "Back to Task Review",
+							"type": "button",
+							"value": "Review-Well"
+						},
+						{
+							"name": "action",
+							"text": "Back to Daily Review",
+							"type": "button",
+							"value": "Daily-Review"
+						}
+					
+					]
 				}
 			]
-		}						
+		},
+		{
+			"message_name" : "Compressor-K001-Liquid",
+			"text": "Please provide what you like to review in Compressor K-001?",
+			"attachments": [
+				{
+					"fallback": "You are unable to choose an option",
+					"callback_id": "Compressor-K001-Liquid",
+					"color": "#3AA3E3",
+					"attachment_type": "default",
+					"actions": [
+						{
+							"name": "action",
+							"text": "Compressor Performance History",
+							"type": "button",
+							"value": "Comp-History"
+						},
+						{
+							"name": "action",
+							"text": "Compressor Maintenance History",
+							"type": "button",
+							"value": "Comp-Maint-History"
+						},
+						{
+							"name": "action",
+							"text": "Assign Task to Technician",
+							"type": "button",
+							"value": "AssignTechnician"
+						}						
+					]
+				}
+			]
+		},
+		{
+			"message_name" : "Comp-History",
+			"text": "Please find the Compressor Performance History display",
+			"attachments": [
+				{
+					"fallback": "You are unable to choose an option",
+					"callback_id": "Comp-History",
+					"color": "#3AA3E3",
+					"attachment_type": "default",
+					"image_url": "http://www.ieltsbuddy.com/images/ielts-task-1-writing-bar-chart-oil-production-capacity-21636483.jpg",
+					"actions": [
+						{
+							"name": "action",
+							"text": "Back to Task Review",
+							"type": "button",
+							"value": "Review-Well"
+						},
+						{
+							"name": "action",
+							"text": "Back to Daily Review",
+							"type": "button",
+							"value": "Daily-Review"
+						}
+					
+					]
+				}
+			]
+		},
+		{
+			"message_name" : "Comp-Maint-History",
+			"text": "Please find the Compressor Maintenance History display",
+			"attachments": [
+				{
+					"fallback": "You are unable to choose an option",
+					"callback_id": "Comp-Maint-History",
+					"color": "#3AA3E3",
+					"attachment_type": "default",
+					"image_url": "http://www.ieltsbuddy.com/images/ielts-task-1-writing-bar-chart-oil-production-capacity-21636483.jpg",
+					"actions": [
+						{
+							"name": "action",
+							"text": "Back to Task Review",
+							"type": "button",
+							"value": "Review-Well"
+						},
+						{
+							"name": "action",
+							"text": "Back to Daily Review",
+							"type": "button",
+							"value": "Daily-Review"
+						}
+					
+					]
+				}
+			]
+		},
+		{
+			"message_name" : "Maintenance",
+			"text": "Following are the high priority events set by the maintenance team for your review",
+			"attachments": [
+				{
+					"fallback": "You are unable to choose an option",
+					"callback_id": "Maintenance",
+					"color": "#3AA3E3",
+					"attachment_type": "default",
+					"actions": [
+						{
+							"name": "action",
+							"text": "Well WS-102 Routine Inspection",
+							"type": "button",
+							"value": "WS-102-Routine-Insp"
+						},
+						{
+							"name": "action",
+							"text": "Well WS-67 Routine Inspection",
+							"type": "button",
+							"value": "WS-67-Routine-Insp"
+						}
+					]
+				}
+			]
+		},	
+		{
+			"message_name" : "WS-102-Routine-Insp",
+			"text": "Please provide what you like to review in Well-WS102?",
+			"attachments": [
+				{
+					"fallback": "You are unable to choose an option",
+					"callback_id": "WS-102-Routine-Insp",
+					"color": "#3AA3E3",
+					"attachment_type": "default",
+					"actions": [
+						{
+							"name": "action",
+							"text": "Production History",
+							"type": "button",
+							"value": "Prod-History"
+						},
+						{
+							"name": "action",
+							"text": "Well Operation Parameters",
+							"type": "button",
+							"value": "Well-Op-Para"
+						},
+						{
+							"name": "action",
+							"text": "Assign Task to Technician",
+							"type": "button",
+							"value": "AssignTechnician"
+						}						
+					]
+				}
+			]
+		},
+		{
+			"message_name" : "WS-67-Routine-Insp",
+			"text": "Please provide what you like to review in Well-WS67?",
+			"attachments": [
+				{
+					"fallback": "You are unable to choose an option",
+					"callback_id": "WS-67-Routine-Insp",
+					"color": "#3AA3E3",
+					"attachment_type": "default",
+					"actions": [
+						{
+							"name": "action",
+							"text": "Production History",
+							"type": "button",
+							"value": "Prod-History"
+						},
+						{
+							"name": "action",
+							"text": "Well Operation Parameters",
+							"type": "button",
+							"value": "Well-Op-Para"
+						},
+						{
+							"name": "action",
+							"text": "Assign Task to Technician",
+							"type": "button",
+							"value": "AssignTechnician"
+						}						
+					]
+				}
+			]
+		},
+		{
+			"message_name" : "Instrumentation",
+			"text": "No high priority events set by the Instrumentation team for your review",
+			"attachments": [
+				{
+					"fallback": "You are unable to choose an option",
+					"callback_id": "Instrumentation",
+					"color": "#3AA3E3",
+					"attachment_type": "default",
+					"actions": [
+						{
+							"name": "action",
+							"text": "Back to Daily Review",
+							"type": "button",
+							"value": "Daily-Review"
+						}
+					]
+				}
+			]
+		},
+		{
+			"message_name" : "Safety",
+			"text": "No high priority events set by the Safety team for your review",
+			"attachments": [
+				{
+					"fallback": "You are unable to choose an option",
+					"callback_id": "Safety",
+					"color": "#3AA3E3",
+					"attachment_type": "default",
+					"actions": [
+						{
+							"name": "action",
+							"text": "Back to Daily Review",
+							"type": "button",
+							"value": "Daily-Review"
+						}
+					]
+				}
+			]
+		},
+		{
+			"message_name" : "AssignTechnician",
+			"text": "The following technicians are certified and available for the task. Select Technician:",
+			"attachments": [
+				{
+					"fallback": "You are unable to choose an option",
+					"callback_id": "AssignTechnician",
+					"color": "#3AA3E3",
+					"attachment_type": "default",
+					"actions": [
+						{
+							"name": "action",
+							"text": "Md Akram",
+							"type": "button",
+							"value": "RaisePermit"
+						},
+						{
+							"name": "action",
+							"text": "Fazlul Haq",
+							"type": "button",
+							"value": "RaisePermit"
+						},
+						{
+							"name": "action",
+							"text": "Robin Kumar",
+							"type": "button",
+							"value": "RaisePermit"
+						},
+						{
+							"name": "action",
+							"text": "Not now, take me back to review",
+							"type": "button",
+							"value": "Daily-Review"
+						}						
+					]
+				}
+			]
+		},
+		{
+			"message_name" : "RaisePermit",
+			"text": "Task Assigned. Raise Permit? Select Permit Type:",
+			"attachments": [
+				{
+					"fallback": "You are unable to choose an option",
+					"callback_id": "RaisePermit",
+					"color": "#3AA3E3",
+					"attachment_type": "default",
+					"actions": [
+						{
+							"name": "action",
+							"text": "Hot Permit",
+							"type": "button",
+							"value": "PermitConfirmation"
+						},
+						{
+							"name": "action",
+							"text": "Cold Permit",
+							"type": "button",
+							"value": "PermitConfirmation"
+						},
+						{
+							"name": "action",
+							"text": "Not now, take me back to review",
+							"type": "button",
+							"value": "Daily-Review"
+						}						
+					]
+				}
+			]
+		},
+		{
+			"message_name" : "PermitConfirmation",
+			"text": "Permit Successfully Raise. Review more tasks?",
+			"attachments": [
+				{
+					"fallback": "You are unable to choose an option",
+					"callback_id": "PermitConfirmation",
+					"color": "#3AA3E3",
+					"attachment_type": "default",
+					"actions": [
+						{
+							"name": "action",
+							"text": "Yes, take me back to review",
+							"type": "button",
+							"value": "Daily-Review"
+						}						
+					]
+				}
+			]
+		}													
 				
 	]
 }
