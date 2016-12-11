@@ -71,6 +71,7 @@ slapp
   }
   else {
     console.log("Default technician botflow");
+    botflow = require('./techbotflow.json');
   }    
   msg.say(getFirstMessage())
 
