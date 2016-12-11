@@ -65,10 +65,11 @@ slapp
   
   if(msg.meta.user_id == 'U2ST254HY') {
     console.log("This is Navin");
+    botflow = require('./techbotflow.json');
   }
   else {
     console.log("This is Andy");
-    botflow = require('./techbotflow.json');
+    
   }    
   msg.say(getFirstMessage())
 
