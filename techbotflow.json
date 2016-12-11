@@ -15,6 +15,12 @@
 					"actions": [
 						{
 							"name": "action",
+							"text": "Well WS055- Leak detected in manifold connection ",
+							"type": "button",
+							"value": "Well-WS055-Leak"
+						},
+						{
+							"name": "action",
 							"text": "Well WS072 -  Alfa Optimization Action - Beam Up",
 							"type": "button",
 							"value": "WS072-Optimization"
@@ -23,14 +29,9 @@
 							"name": "action",
 							"text": "Well WS043- Low-High water production - bean down ",
 							"type": "button",
-							"value": "WellWS043-Water"
-						},
-						{
-							"name": "action",
-							"text": "Well WS055- Leak detected in manifold connection ",
-							"type": "button",
-							"value": "Well-WS055-Leak"
+							"value": "Well-WS043-Water"
 						}
+						
 						
 					]
 				}
@@ -58,12 +59,7 @@
 							"type": "button",
 							"value": "VendorAvailability"
 						},
-						{
-							"name": "action",
-							"text": "Check Equipment Preparation and HSE Compliance Information",
-							"type": "button",
-							"value": "CheckEquipment"
-						},
+						
 						{
 							"name": "action",
 							"text": "Check Manuals and Drawings",
@@ -74,12 +70,141 @@
 							"name": "action",
 							"text": "Don't do anything now",
 							"type": "button",
-							"value": "DoNothing"
+							"value": "Greetings"
 						}
 					]
 				}
 			]
 		},
+		{
+			"message_name" : "WS072-Optimization",
+			"text": "Permit to perform this task is awaited, I will inform you as soon as it is available",
+			"attachments": [
+				{
+					"fallback": "You are unable to choose an option",
+					"callback_id": "WS072-Optimization",
+					"color": "#3AA3E3",
+					"attachment_type": "default",
+					"actions": [
+						{
+							"name": "action",
+							"text": "Back to task review",
+							"type": "button",
+							"value": "Greetings"
+						}
+					]
+				}
+			]
+		},
+		{
+			"message_name" : "Well-WS043-Water",
+			"text": "Permit to perform this task is awaited, I will inform you as soon as it is available",
+			"attachments": [
+				{
+					"fallback": "You are unable to choose an option",
+					"callback_id": "Well-WS043-Water",
+					"color": "#3AA3E3",
+					"attachment_type": "default",
+					"actions": [
+						{
+							"name": "action",
+							"text": "Back to task review",
+							"type": "button",
+							"value": "Greetings"
+						}
+					]
+				}
+			]
+		},
+		{
+			"message_name" : "VendorAvailability",
+			"text": "Task requires vendor to be available. Below is the list of certified vendors for this task. Select vendor:",
+			"attachments": [
+				{
+					"fallback": "You are unable to choose an option",
+					"callback_id": "VendorAvailability",
+					"color": "#3AA3E3",
+					"attachment_type": "default",
+					"actions": [
+						{
+							"name": "action",
+							"text": "Dinesh Shah",
+							"type": "button",
+							"value": "SelectVendor"
+						},
+						{
+							"name": "action",
+							"text": "Ajay Kumar",
+							"type": "button",
+							"value": "SelectVendor"
+						},
+						{
+							"name": "action",
+							"text": "Md Iqbal",
+							"type": "button",
+							"value": "SelectVendor"
+						},
+						{
+							"name": "action",
+							"text": "Back to task review",
+							"type": "button",
+							"value": "Greetings"
+						}
+					
+					]
+				}
+			]
+		},
+		{
+			"message_name" : "SelectVendor",
+			"text": "Thanks. Vendor was informed and has accepted. Electronic Permit to Work has been raised",
+			"attachments": [
+				{
+					"fallback": "You are unable to choose an option",
+					"callback_id": "SelectVendor",
+					"color": "#3AA3E3",
+					"attachment_type": "default",
+					"text": "The following have been added to the offline docket: Well Maintenance History, Well Incidents, Remote Team Details, SOP Documents",
+					"actions": [
+						{
+							"name": "action",
+							"text": "Continue Reviewing",
+							"type": "button",
+							"value": "Manuals"
+						},
+						{
+							"name": "action",
+							"text": "Back to task review",
+							"type": "button",
+							"value": "Greetings"
+						}
+							
+					]
+				}
+			]
+		},
+		{
+			"message_name" : "Manuals",
+			"text": "Let me check if we have the latest manuals and drawings",
+			"attachments": [
+				{
+					"fallback": "You are unable to choose an option",
+					"callback_id": "Manuals",
+					"color": "#3AA3E3",
+					"attachment_type": "default",
+					"text": "Latest versions of Equipment Manuals and drawings have been synchronized",
+					"actions": [
+						{
+							"name": "action",
+							"text": "Back to task review",
+							"type": "button",
+							"value": "Greetings"
+						}
+							
+					]
+				}
+			]
+		},				
 		{
 			"message_name" : "Inventory",
 			"text": "Hang on! I will pull up the information",

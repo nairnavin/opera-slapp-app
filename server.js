@@ -166,6 +166,23 @@ slapp.action('Well-WS055-Leak', 'action', (msg, value) => {
   //console.log(value)
   msg.say(getAttachmentMessage(value))
 })
+slapp.action('SelectVendor', 'action', (msg, value) => {
+  //console.log(value)
+  msg.say(getAttachmentMessage(value))
+})
+slapp.action('Manuals', 'action', (msg, value) => {
+  //console.log(value)
+  msg.say(getAttachmentMessage(value))
+})
+slapp.action('Well-WS043-Water', 'action', (msg, value) => {
+  //console.log(value)
+  msg.say(getAttachmentMessage(value))
+})
+slapp.action('WS072-Optimization', 'action', (msg, value) => {
+  //console.log(value)
+  msg.say(getAttachmentMessage(value))
+})
+ 
  
 //This is a test
 
