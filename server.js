@@ -5,8 +5,8 @@ const Slapp = require('slapp')
 const ConvoStore = require('slapp-convo-beepboop')
 const Context = require('slapp-context-beepboop')
 
-//var botflow = require('./botflow.json');
-var botflow = require('./techbotflow.json');
+var botflow = require('./botflow.json');
+//var botflow = require('./techbotflow.json');
 
 function getFirstMessage() {
 	return getAttachmentMessage('Greetings');
@@ -62,14 +62,19 @@ slapp.message('help', ['mention', 'direct_message'], (msg) => {
 // "Conversation" flow that tracks state - kicks off when user says hi, hello or hey
 slapp
   .message('^(hi|hello|hey)$', ['direct_mention', 'direct_message'], (msg, text) => {
-    msg
-      .say(getFirstMessage())
-      // sends next event from user to this route, passing along state
-      //.route('how-are-you', { greeting: text })
+  
+  if(msg.meta.user_id == 'U2ST254HY') {
+    console.log("This is Navin");
+  }
+  else {
+    console.log("This is Andy");
+    botflow = require('./techbotflow.json');
+  }    
+  msg.say(getFirstMessage())
+
 })
 
 slapp.action('Greetings', 'action', (msg, value) => {
-  console.log(msg.meta.user_id)
   msg.say(getAttachmentMessage(value))
 })
 
