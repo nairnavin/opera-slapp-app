@@ -5,8 +5,9 @@ const Slapp = require('slapp')
 const ConvoStore = require('slapp-convo-beepboop')
 const Context = require('slapp-context-beepboop')
 
-var botflow = require('./botflow.json');
-//var botflow = require('./techbotflow.json');
+var botflow = require('./techbotflow.json');
+var navin = 'U2ST254HY';
+var andy = '';
 
 function getFirstMessage() {
 	return getAttachmentMessage('Greetings');
@@ -63,13 +64,13 @@ slapp.message('help', ['mention', 'direct_message'], (msg) => {
 slapp
   .message('^(hi|hello|hey)$', ['direct_mention', 'direct_message'], (msg, text) => {
   
-  if(msg.meta.user_id == 'U2ST254HY') {
-    console.log("This is Navin");
-    botflow = require('./techbotflow.json');
+  if(msg.meta.user_id == navin) {
+    console.log("This is Navin, a supervisor");
+    console.log("Loading supervisor botflow");
+    botflow = require('./botflow.json');
   }
   else {
-    console.log("This is Andy");
-    
+    console.log("Default technician botflow");
   }    
   msg.say(getFirstMessage())
 
