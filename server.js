@@ -94,6 +94,18 @@ slapp.action('Review-Well', 'action', (msg, value) => {
   //console.log(value)
   msg.say(getAttachmentMessage(value))
 })
+slapp.action('WS-102-Routine-Insp', 'action', (msg, value) => {
+  //console.log(value)
+  msg.say(getAttachmentMessage(value))
+})
+slapp.action('WS-67-Routine-Insp', 'action', (msg, value) => {
+  //console.log(value)
+  msg.say(getAttachmentMessage(value))
+})
+slapp.action('AssignTechnician', 'action', (msg, value) => {
+  //console.log(value)
+  msg.say(getAttachmentMessage(value))
+})
 
 //This is a test
 
