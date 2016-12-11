@@ -21,9 +21,9 @@
 						},
 						{
 							"name": "action",
-							"text": "Review facility Scorpio",
+							"text": "Review HSE scorecard for facility Scorpio",
 							"type": "button",
-							"value": "Faciliy-Scorpio" 
+							"value": "HSE-Faciliy-Scorpio" 
 						}
 					]
 				}
@@ -497,6 +497,28 @@
 							"type": "button",
 							"value": "Daily-Review"
 						}						
+					]
+				}
+			]
+		},
+		{
+			"message_name" : "HSE-Facility-Scorpio",
+			"text": "Please find the Scorpio Facility HSE Scorecard display",
+			"attachments": [
+				{
+					"fallback": "You are unable to choose an option",
+					"callback_id": "HSE-Facility-Scorpio",
+					"color": "#3AA3E3",
+					"attachment_type": "default",
+					"image_url": "http://www.ieltsbuddy.com/images/ielts-task-1-writing-bar-chart-oil-production-capacity-21636483.jpg",
+					"actions": [
+						{
+							"name": "action",
+							"text": "Back to Daily Review",
+							"type": "button",
+							"value": "Daily-Review"
+						}
+					
 					]
 				}
 			]
