@@ -3,7 +3,7 @@
 		{
 
 			"message_name" : "Greetings",
-			"text": "Hello!!! I am Opera, your digital production assistant. 
+			"text": "Hello!!! I am Opera, your digital production assistant.",
 			"attachments": [
 				{
 					"text": "You have a new task assigned. Which of the tasks would you like to review",

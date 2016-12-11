@@ -5,8 +5,8 @@ const Slapp = require('slapp')
 const ConvoStore = require('slapp-convo-beepboop')
 const Context = require('slapp-context-beepboop')
 
-var botflow = require('./botflow.json');
-//var botflow = require('./techbotflow.json');
+//var botflow = require('./botflow.json');
+var botflow = require('./techbotflow.json');
 
 function getFirstMessage() {
 	return getAttachmentMessage('Greetings');
@@ -69,7 +69,7 @@ slapp
 })
 
 slapp.action('Greetings', 'action', (msg, value) => {
-  //console.log(value)
+  console.log(msg.meta.user_id)
   msg.say(getAttachmentMessage(value))
 })
 
