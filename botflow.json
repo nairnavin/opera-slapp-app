@@ -134,7 +134,7 @@
 					"callback_id": "Well-Op-Para",
 					"color": "#3AA3E3",
 					"attachment_type": "default",
-					"image_url": "http://www.ieltsbuddy.com/images/ielts-task-1-writing-bar-chart-oil-production-capacity-21636483.jpg",
+					"image_url": "https://raw.githubusercontent.com/nairnavin/opera-slapp-app/master/data/WellOperationPara.png",
 					"actions": [
 						{
 							"name": "action",
@@ -162,7 +162,7 @@
 					"callback_id": "Prod-History",
 					"color": "#3AA3E3",
 					"attachment_type": "default",
-					"image_url": "http://www.ieltsbuddy.com/images/ielts-task-1-writing-bar-chart-oil-production-capacity-21636483.jpg",
+					"image_url": "https://raw.githubusercontent.com/nairnavin/opera-slapp-app/master/data/WellProdHistory.png",
 					"actions": [
 						{
 							"name": "action",
@@ -222,7 +222,7 @@
 					"callback_id": "Comp-History",
 					"color": "#3AA3E3",
 					"attachment_type": "default",
-					"image_url": "http://www.ieltsbuddy.com/images/ielts-task-1-writing-bar-chart-oil-production-capacity-21636483.jpg",
+					"image_url": "https://raw.githubusercontent.com/nairnavin/opera-slapp-app/master/data/CompressorEfficiency.png",
 					"actions": [
 						{
 							"name": "action",
@@ -250,7 +250,7 @@
 					"callback_id": "Comp-Maint-History",
 					"color": "#3AA3E3",
 					"attachment_type": "default",
-					"image_url": "http://www.ieltsbuddy.com/images/ielts-task-1-writing-bar-chart-oil-production-capacity-21636483.jpg",
+					"image_url": "https://raw.githubusercontent.com/nairnavin/opera-slapp-app/master/data/CompressorHistory.png",
 					"actions": [
 						{
 							"name": "action",
@@ -510,7 +510,7 @@
 					"callback_id": "HSE-Facility-Scorpio",
 					"color": "#3AA3E3",
 					"attachment_type": "default",
-					"image_url": "http://www.ieltsbuddy.com/images/ielts-task-1-writing-bar-chart-oil-production-capacity-21636483.jpg",
+					"image_url": "https://raw.githubusercontent.com/nairnavin/opera-slapp-app/master/data/HSEReport.png",
 					"actions": [
 						{
 							"name": "action",
