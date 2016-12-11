@@ -15,7 +15,7 @@
 					"actions": [
 						{
 							"name": "action",
-							"text": "Yesterday's DPR Review'",
+							"text": "Yesterday's DPR Review",
 							"type": "button",
 							"value": "Daily-Review"
 						},
@@ -514,9 +514,9 @@
 					"actions": [
 						{
 							"name": "action",
-							"text": "Back to Daily Review",
+							"text": "Back to start",
 							"type": "button",
-							"value": "Daily-Review"
+							"value": "Greetings"
 						}
 					
 					]
