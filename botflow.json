@@ -95,7 +95,7 @@
 		},		
 		{
 			"message_name" : "Review-Well",
-			"text": "Please provide what you like to review in Well-WS123?",
+			"text": "Please provide what you would like to review in Well-WS123?",
 			"attachments": [
 				{
 					"fallback": "You are unable to choose an option",
