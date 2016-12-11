@@ -229,7 +229,7 @@
 							"text": "Back to Task Review",
 							"type": "button",
 							"value": "Review-Comp"
-						},
+						}, 
 						{
 							"name": "action",
 							"text": "Back to Daily Review",

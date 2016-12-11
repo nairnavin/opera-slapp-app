@@ -162,7 +162,7 @@ slapp.action('VendorAvailability', 'action', (msg, value) => {
   //console.log(value)
   msg.say(getAttachmentMessage(value))
 })
-
+ 
 //This is a test
 
   /*
