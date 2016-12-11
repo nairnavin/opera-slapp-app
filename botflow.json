@@ -95,7 +95,7 @@
 		},		
 		{
 			"message_name" : "Review-Well",
-			"text": "Please provide what you would like to review in Well-WS123?",
+			"text": "Please provide what you would like to review for the well?",
 			"attachments": [
 				{
 					"fallback": "You are unable to choose an option",
@@ -132,6 +132,34 @@
 				{
 					"fallback": "You are unable to choose an option",
 					"callback_id": "Well-Op-Para",
+					"color": "#3AA3E3",
+					"attachment_type": "default",
+					"image_url": "http://www.ieltsbuddy.com/images/ielts-task-1-writing-bar-chart-oil-production-capacity-21636483.jpg",
+					"actions": [
+						{
+							"name": "action",
+							"text": "Back to Task Review",
+							"type": "button",
+							"value": "Review-Well"
+						},
+						{
+							"name": "action",
+							"text": "Back to Daily Review",
+							"type": "button",
+							"value": "Daily-Review"
+						}
+					
+					]
+				}
+			]
+		},
+		{
+			"message_name" : "Prod-History",
+			"text": "Please find the Well Operation Parameters display",
+			"attachments": [
+				{
+					"fallback": "You are unable to choose an option",
+					"callback_id": "Prod-History",
 					"color": "#3AA3E3",
 					"attachment_type": "default",
 					"image_url": "http://www.ieltsbuddy.com/images/ielts-task-1-writing-bar-chart-oil-production-capacity-21636483.jpg",
