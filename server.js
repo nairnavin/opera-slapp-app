@@ -95,6 +95,8 @@ slapp.action('Review-Well', 'action', (msg, value) => {
   msg.say(getAttachmentMessage(value))
 })
 
+//This is a test
+
   /*
   .route('how-are-you', (msg, state) => {
     var text = (msg.body.event && msg.body.event.text) || ''
